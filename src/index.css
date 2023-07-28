@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@400;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* styles.css */
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/* CSS */
+@keyframes moveUpAndDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px); /* Move the bulb up by 8 pixels */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+/* Apply the animation to the 'animate-bulb' class */
+.animate-bulb {
+  animation: moveUpAndDown 1s ease infinite; /* The animation will last for 2 seconds and repeat infinitely */
+}
+
+/* Default styles for dark mode */
+body {
+  background-color: rgb(8 47 73);
+  color: rgb(248, 248, 248);
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styles for light mode */
+.light-mode {
+  background-color: rgb(255 247 237);
+  color: rgb(8 47 73);
+  padding: 0;
+  margin: 0;
+}
