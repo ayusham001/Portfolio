@@ -34,7 +34,7 @@ export default function Skills({isLightMode}) {
                 <Skill name='HTML' x='-21vw' y='-1vw' isLightMode={isLightMode} />
                 <Skill name='Tailwind CSS' x='-26vw' y='8vw' isLightMode={isLightMode}  />
                 <Skill name='JavaScript' x='0vw' y='12vw' isLightMode={isLightMode}  />
-                <Skill name='ReactJS' x='-36vw' y='-10vw' isLightMode={isLightMode}  />
+                <Skill name='ReactJS' x='-22vw' y='-8vw' isLightMode={isLightMode}  />
                 <Skill name='NextJS' x='-36vw' y='-10vw' isLightMode={isLightMode}  />
                 <Skill name='Material-UI' x='-18vw' y='-14vw' isLightMode={isLightMode}  />
                 <Skill name='ExpressJS' x='13vw' y='-9vw' isLightMode ={isLightMode} />
