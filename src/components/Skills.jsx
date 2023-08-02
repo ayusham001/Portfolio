@@ -32,18 +32,20 @@ export default function Skills({isLightMode}) {
                 </div>
                 <Skill name='CSS' x='-5vw' y='-12vw' isLightMode={isLightMode} />
                 <Skill name='HTML' x='-21vw' y='-1vw' isLightMode={isLightMode} />
-                <Skill name='Python' x='-26vw' y='8vw' isLightMode={isLightMode}  />
+                <Skill name='Tailwind CSS' x='-26vw' y='8vw' isLightMode={isLightMode}  />
                 <Skill name='JavaScript' x='0vw' y='12vw' isLightMode={isLightMode}  />
                 <Skill name='ReactJS' x='-36vw' y='-10vw' isLightMode={isLightMode}  />
-                <Skill name='NodeJS' x='-18vw' y='-14vw' isLightMode={isLightMode}  />
+                <Skill name='NextJS' x='-36vw' y='-10vw' isLightMode={isLightMode}  />
+                <Skill name='Material-UI' x='-18vw' y='-14vw' isLightMode={isLightMode}  />
                 <Skill name='ExpressJS' x='13vw' y='-9vw' isLightMode ={isLightMode} />
-                <Skill name='Tailwind CSS' x='10vw' y='-20vw' isLightMode={isLightMode}  />
-                <Skill name='SCSS' x='26vw' y='8vw' isLightMode={isLightMode}  />
+                <Skill name='Python' x='10vw' y='-20vw' isLightMode={isLightMode}  />
+                <Skill name='Firebase' x='26vw' y='8vw' isLightMode={isLightMode}  />
                 <Skill name='DSA' x='35vw' y='-1vw' isLightMode={isLightMode}  />
-                <Skill name='Material-UI' x='35vw' y='-10vw' isLightMode={isLightMode}  />
-                <Skill name='Firebase' x='-38vw' y='-1vw' isLightMode={isLightMode}  />
+                <Skill name='NodeJS' x='35vw' y='-10vw' isLightMode={isLightMode}  />
+                <Skill name='SCSS' x='-38vw' y='-1vw' isLightMode={isLightMode}  />
                 <Skill name='Redux' x='-22vw' y='-20vw' isLightMode={isLightMode}  />
                 <Skill name='SQL' x='18vw' y='4vw' isLightMode={isLightMode}  />
+                <Skill name='MongoDB' x='26vw' y='-7vw' isLightMode={isLightMode}  />
             </div>
         </div>
     )

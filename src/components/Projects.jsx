@@ -4,6 +4,7 @@ import khanapaani from '../assets/khanapaani.png'
 import Linkloop from '../assets/linkloop.png'
 import otl from '../assets/otl.png'
 import todo from '../assets/todo.png'
+import chat from '../assets/chat.png'
 
 export default function Projects({ isLightMode }) {
     const Projects = [
@@ -24,10 +25,18 @@ export default function Projects({ isLightMode }) {
             liveLink: 'https://khaanapaani.netlify.app/',
         },
         {
+            title: 'Real-Time Chat',
+            imageUrl: chat,
+            body: "The Real-Time Chat Application with Socket.IO is a web-based chat platform that enables users to engage in live conversations with each other. The project utilizes Socket.IO, a powerful JavaScript library, to facilitate real-time bidirectional communication between the server and multiple clients, providing a seamless and interactive chat experience.",
+            tech:'Html, CSS, JavaScrit, NodeJs, ExpressJs, Socket.IO',
+            githubLink: 'https://github.com/ayusham001/Real-time-chat',
+            liveLink: 'https://github.com/ayusham001/Real-time-chat',
+        },
+        {
             title: 'Ultimate To-Do App',
             imageUrl: todo,
-            body: "The Ultimate To-Do App streamlines productivity, empowering users to effortlessly manage tasks, achieve goals, and stay organized. It's the go-to tool for individuals seeking effective task management in personal and professional endeavors.",
-            tech:'Html, CSS, JavaScrit, NodeJs, ExpressJs',
+            body: "The Ultimate To-Do App streamlines productivity, empowering users to create account and login, effortlessly manage tasks, achieve goals, and stay organized. It's the go-to tool for individuals seeking effective task management in personal and professional endeavors.",
+            tech:'Html, CSS, JavaScrit, NodeJs, ExpressJs, MongoDB',
             githubLink: 'https://github.com/ayusham001/ToDoApp',
             liveLink: 'https://github.com/ayusham001/ToDoApp',
         },
