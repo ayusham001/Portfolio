@@ -17,20 +17,20 @@ export default function Projects({ isLightMode }) {
             liveLink: 'https://linkloop.netlify.app/',
         },
         {
+            title: 'Real-Time Chat',
+            imageUrl: chat,
+            body: "The Real-Time Chat Application with Socket.IO is a web-based chat platform that enables users to engage in live conversations with each other. The project utilizes Socket.IO, a powerful JavaScript library, to facilitate real-time bidirectional communication between the server and multiple clients, providing a seamless and interactive chat experience.",
+            tech:'Html, CSS, JavaScrit, NodeJs, ExpressJs, Socket.IO',
+            githubLink: 'https://github.com/ayusham001/Real-time-chat',
+            liveLink: 'https://github.com/ayusham001/ToDoApp',
+        },
+        {
             title: 'Khaan-Paani: Ultimate Restaurant Finder',
             imageUrl: khanapaani,
             body: "I developed an online restaurant search engine featuring local listings and user reviews. Users can effortlessly add, update, and delete restaurant data. Empowering food enthusiasts to explore and share their culinary experiences.",
             tech:'ReactJS, CSS, Material-UI',
             githubLink: 'https://github.com/ayusham001/Khaana-Paani',
             liveLink: 'https://khaanapaani.netlify.app/',
-        },
-        {
-            title: 'Real-Time Chat',
-            imageUrl: chat,
-            body: "The Real-Time Chat Application with Socket.IO is a web-based chat platform that enables users to engage in live conversations with each other. The project utilizes Socket.IO, a powerful JavaScript library, to facilitate real-time bidirectional communication between the server and multiple clients, providing a seamless and interactive chat experience.",
-            tech:'Html, CSS, JavaScrit, NodeJs, ExpressJs, Socket.IO',
-            githubLink: 'https://github.com/ayusham001/Real-time-chat',
-            liveLink: 'https://github.com/ayusham001/Real-time-chat',
         },
         {
             title: 'Ultimate To-Do App',
