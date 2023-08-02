@@ -12,7 +12,7 @@ const Details = ({ position, company, address, duration, work, isLightMode }) =>
 
 
     return (
-        <li ref={ref} className='my-8 first:mt-0 last:mb-0 md:w-[80%]  mx-auto flex flex-col items-center justify-between'>
+        <li ref={ref} className='px-8 first:mt-0 last:mb-0 md:w-[80%]  mx-auto flex flex-col items-center justify-between'>
             <Icons isLightMode={isLightMode} reference={ref} />
             <motion.div
                 initial={{ y: 50 }}

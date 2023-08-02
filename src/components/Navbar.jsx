@@ -14,18 +14,15 @@ export default function Navbar({ isLightMode, toggleLightMode }) {
     const location = useLocation();
     return (
         <>
-            <header className={isLightMode ? 'z-50 flex flex-wrap justify-between max-[430px]:w-fit w-full py-4 px-6 fixed top-0 bg-orange-50 '
-                : "z-50 flex flex-wrap justify-between max-[430px]:w-fit w-full py-4 px-6 fixed top-0 bg-sky-950"}>
-                <div className="flex items-center  font-montserrat gap-10 md:w-auto w-full mb-2 md:mb-0 max-[770px]:w-screen">
-                    <nav className='flex max-[770px]:gap-8 max-[430px]:gap-4 gap-6 justify-stretch'>
-                        <Link to="/" className={`hover:underline focus:text-sky-500 ${location.pathname === '/' && 'text-sky-500'}`}>Home</Link>
-                        <Link to="/about" className={`hover:underline focus:text-sky-500 ${location.pathname === '/about' && 'text-sky-500'}`}>About</Link>
-                        <Link to="/Projects" className={`hover:underline focus:text-sky-500 ${location.pathname === '/Projects' && 'text-sky-500'}`}>Projects</Link>
-                        <Link to="/contact" className={`hover:underline focus:text-sky-500 ${location.pathname === '/contact' && 'text-sky-500'}`}>Contact</Link>
-                    </nav>
-                </div>
+            <header className={`fixed top-0 w-full flex flex-wrap md:flex-nowrap justify-between py-4 px-6 z-50 ${isLightMode?"bg-orange-50":"bg-sky-950"} `}>
+                <nav className='flex max-[770px]:gap-8 max-[430px]:gap-6 gap-6 justify-between items-center md:w-fit w-full'>
+                    <Link to="/" className={`hover:underline focus:text-sky-500 ${location.pathname === '/' && 'text-sky-500'}`}>Home</Link>
+                    <Link to="/about" className={`hover:underline focus:text-sky-500 ${location.pathname === '/about' && 'text-sky-500'}`}>About</Link>
+                    <Link to="/Projects" className={`hover:underline focus:text-sky-500 ${location.pathname === '/Projects' && 'text-sky-500'}`}>Projects</Link>
+                    <Link to="/contact" className={`hover:underline focus:text-sky-500 ${location.pathname === '/contact' && 'text-sky-500'}`}>Contact</Link>
+                </nav>
                 {isLightMode ? <img src={Logo} alt='logo' className="w-10  hidden md:block" /> : <img src={WLogo} alt='logo' className="w-10  hidden md:block" />}
-                <div className="flex max-[770px]:gap-8 max-[430px]:gap-6 gap-6 justify-between items-center">
+                <div className="flex max-[770px]:gap-8 max-[430px]:gap-6 gap-6 justify-between items-center w-full md:w-fit">
                     <a href="https://www.linkedin.com/in/ayush-mishra-809385215/"><LinkedInIcon className={isLightMode ? 'text-blue-600' : "text-white-800"} /></a>
                     <a href="https://github.com/ayusham001"><GitHubIcon className={isLightMode ? 'text-blue-950' : "text-white-800"} /></a>
                     <a href="https://auth.geeksforgeeks.org/user/ayusham001/practice">{isLightMode ? <img src={GFG} alt='logo' className="w-7 h-4" /> : <img src={WGFG} alt='logo' className="w-8 h-9" />}</a>
