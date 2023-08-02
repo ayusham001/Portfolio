@@ -12,14 +12,14 @@ const Details = ({ position, company, address, duration, work, isLightMode }) =>
 
 
     return (
-        <li ref={ref} className='px-8 first:mt-0 last:mb-0 md:w-[80%]  mx-auto flex flex-col items-center justify-between'>
+        <li ref={ref} className='my-8 md:w-[80%] w-full mx-auto flex flex-col items-center justify-between'>
             <Icons isLightMode={isLightMode} reference={ref} />
             <motion.div
                 initial={{ y: 50 }}
                 whileInView={{ y: 0 }}
                 transition={{ duration: 0.5, type: "spring" }}
             >
-                <h3 className='capitalize font-bold text-2xl sm:text-xl max-[640px]:text-lg'>{position}&nbsp;<span className='text-sky-600'>@{company}</span></h3>
+                <h3 className='capitalize flex flex-wrap font-bold text-2xl sm:text-xl max-[640px]:text-lg'>{position}&nbsp;<span className='text-sky-600'>@{company}</span></h3>
                 <span className={`capitalize font-medium max-[640px]:text-sm ${isLightMode ? 'text-sky-700' : 'text-gray-400'} `}>
                     {duration} | {address}
                 </span>
@@ -47,28 +47,28 @@ export default function Experience({ isLightMode }) {
                     style={{ scaleY: scrollYProgress }}
                     className={`absolute left-[36px] max-[770px]:left-0 top-0 w-[4px] h-full origin-top ${isLightMode ? 'bg-sky-950' : 'bg-orange-50'} `} />
                 <div className='mx-2'>
-                <ul className='w-full flex flex-col items-start justify-between ml-4'>
-                    <Details
-                        isLightMode={isLightMode}
-                        company="CodeQuotient's SuperCoder Program"
-                        position="Full Stack Developer"
-                        duration="June 2023 - Present"
-                        address="Mohali, Punjab"
-                        work={`Actively participating in the CodeQuotient's SuperCoder Program, demonstrating exceptional coding skills and a passion for problem-solving.
+                    <ul className='w-full flex flex-col items-start justify-evenly ml-4'>
+                        <Details
+                            isLightMode={isLightMode}
+                            company="CodeQuotient's SuperCoder Program"
+                            position="Full Stack Developer"
+                            duration="June 2023 - Present"
+                            address="Mohali, Punjab"
+                            work={`Actively participating in the CodeQuotient's SuperCoder Program, demonstrating exceptional coding skills and a passion for problem-solving.
                             Engaged in a challenging series of assessments, honing expertise in JavaScript and its frameworks.
                             Collaborated with fellow participants and mentors, fostering teamwork and effective communication while tackling complex coding projects and real-world software challenges.`}
-                    />
-                    <Details
-                        isLightMode={isLightMode}
-                        company="Google Developer Students Clubs"
-                        position="Marketing Manager"
-                        duration="Aug 2022 - June 2023"
-                        address=" Prayagraj, UP"
-                        work={`Managed and skillfully executed dynamic marketing strategies to increase awareness and enthusiastic participation in GDSC events and activities.
+                        />
+                        <Details
+                            isLightMode={isLightMode}
+                            company="Google Developer Students Clubs"
+                            position="Marketing Manager"
+                            duration="Aug 2022 - June 2023"
+                            address=" Prayagraj, UP"
+                            work={`Managed and skillfully executed dynamic marketing strategies to increase awareness and enthusiastic participation in GDSC events and activities.
                         Developed and implemented digital marketing campaigns, including social media, email, and content marketing, resulting in increased engagement and event registrations.
                         Created compelling marketing collateral, such as flyers, and promotional materials, to effectively communicate GDSC's value proposition to the target audience`}
-                    />
-                </ul>
+                        />
+                    </ul>
                 </div>
             </div>
         </div>

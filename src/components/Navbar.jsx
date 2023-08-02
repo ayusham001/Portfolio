@@ -14,7 +14,7 @@ export default function Navbar({ isLightMode, toggleLightMode }) {
     const location = useLocation();
     return (
         <>
-            <header className={`fixed top-0 w-full flex flex-wrap md:flex-nowrap justify-between py-4 px-6 z-50 ${isLightMode?"bg-orange-50":"bg-sky-950"} `}>
+            <header className={`fixed top-0 w-full flex flex-wrap md:flex-nowrap justify-between py-4 px-6 pr-6 z-50 ${isLightMode?"bg-orange-50":"bg-sky-950"} `}>
                 <nav className='flex max-[770px]:gap-8 max-[430px]:gap-6 gap-6 justify-between items-center md:w-fit w-full'>
                     <Link to="/" className={`hover:underline focus:text-sky-500 ${location.pathname === '/' && 'text-sky-500'}`}>Home</Link>
                     <Link to="/about" className={`hover:underline focus:text-sky-500 ${location.pathname === '/about' && 'text-sky-500'}`}>About</Link>
