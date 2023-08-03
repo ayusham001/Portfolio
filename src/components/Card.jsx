@@ -28,7 +28,7 @@ function Card({ title, imageUrl, body,tech, githubLink, LiveLink, isLightMode })
                     <p>{body}</p>
                 </div>
                 <div className="items-center flex gap-2">
-                    <a href={githubLink}>
+                    <a href={githubLink} target='_blank'>
                         <GitHubIcon className={isLightMode ? 'text-white' : 'text-blue-950'} />
                     </a>
                     <a
