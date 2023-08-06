@@ -1,12 +1,22 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link, useLocation } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import About from "./components/About";
 import './index.css';
-import Skills from "./components/Skills";
+import ScrollToTopButton from "./components/Scroll";
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
 
 function App() {
   const [isLightMode, setLightMode] = useState(false);
@@ -37,12 +47,13 @@ function App() {
       <Router>
         <Navbar isLightMode={isLightMode} toggleLightMode={toggleLightMode} />
         <div className="main-container">
+          <ScrollToTop />
+          <ScrollToTopButton isLightMode={isLightMode}/>
           <Routes>
             <Route path="/" element={<Home isLightMode={isLightMode}/>} />
             <Route path="/Projects" element={<Projects isLightMode={isLightMode}/>} />
             <Route path="/Contact" element={<Contact isLightMode={isLightMode}/>} />
             <Route path="/About" element={<About isLightMode={isLightMode}/>} />
-            {/* Add more routes for other pages */}
           </Routes>
         </div>
       </Router>
