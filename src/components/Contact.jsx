@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import TransitionEffect from './TransitionEffect';
 
 export default function Contact({ isLightMode }) {
     const [formData, setFormData] = useState({
@@ -33,6 +34,7 @@ export default function Contact({ isLightMode }) {
 
     return (
         <div className=''>
+            <TransitionEffect/>
         <form onSubmit={handleSubmit}
             className={isLightMode ? " mt-32 w-fit max-w-lg md:w-full  mx-auto border-2 bg-orange-100 shadow-sky-950 shadow-2xl rounded-xl p-6"
                 : "w-fit mt-32 max-w-lg md:w-full mx-auto border shadow-orange-50  shadow-lg rounded-xl p-6"}>

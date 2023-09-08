@@ -1,16 +1,20 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 import Me from '../assets/me.png';
 import WBulb from '../assets/Wbulb.png';
 import Bulb from '../assets/bulb.png';
 import Resume from '../assets/Resume.pdf';
 import Hireme from '../assets/hireme.png';
 import DHireme from '../assets/DHireme.png';
+import TransitionEffect from './TransitionEffect'
 import OpenInNewRoundedIcon from '@mui/icons-material/OpenInNewRounded';
 import '../index.css'
 
 export default function Home({ isLightMode }) {
     return (
-        <div className={`'flex justify-center items-center  font-montserrat mt-32 `}>
+        <motion.div className={`'flex justify-center items-center  font-montserrat mt-32 `}
+        transition={{ duration: 1, type: "spring" }}>
+            <TransitionEffect/>
             <div className='flex flex-wrap justify-around items-center md:px-1'>
                 <div className='flex items-end'>
                     <div className='hidden md:block md:w-24'>
@@ -28,13 +32,13 @@ export default function Home({ isLightMode }) {
                     </p>
                     <div className='flex justify-between'>
                         <div className='flex gap-4 items-center'>
-                            <a href={Resume} target='_blank' className={isLightMode ? 'bg-sky-800 flex text-white rounded-md py-1 px-4 hover:shadow-current hover:shadow-sm hover:text-sky-950  hover:bg-white'
-                                : 'bg-sky-800 flex rounded-md w-max py-1 px-4 hover:text-sky-950 hover:bg-white '}>
+                            <a href={Resume} target='_blank' className={isLightMode ? 'bg-sky-800 flex text-white rounded-md py-1 px-4 hover:shadow-current hover:shadow-sm hover:text-sky-950  hover:bg-white transition-all ease-in active:scale-90 duration-75'
+                                : 'bg-sky-800 flex rounded-md w-max py-1 px-4 hover:text-sky-950 hover:bg-white transition-all ease-in active:scale-90 duration-75'}>
                                 Resume
                                 <div className='hidden md:block'>
                                     <OpenInNewRoundedIcon className=' md:ml-1' /></div>
                             </a>
-                            <a href='mailto:ayush.info.dev@gmail.com' target='_blank' className='underline'>
+                            <a href='mailto:ayush.info.dev@gmail.com' target='_blank' className='underline transition-transform transform hover:scale-110 duration-300 hover:no-underline'>
                                 Email
                             </a>
                         </div>
@@ -44,6 +48,6 @@ export default function Home({ isLightMode }) {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }

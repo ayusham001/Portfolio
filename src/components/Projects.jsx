@@ -5,6 +5,7 @@ import Linkloop from '../assets/linkloop.png'
 import otl from '../assets/otl.png'
 import todo from '../assets/todo.png'
 import chat from '../assets/chat.png'
+import TransitionEffect from './TransitionEffect'
 
 export default function Projects({ isLightMode }) {
     const Projects = [
@@ -54,6 +55,7 @@ export default function Projects({ isLightMode }) {
         <div className='mt-32'>
             <div>
                 <div className='flex flex-col gap-8 my-3'>
+                <TransitionEffect/>
                     {Projects.map((project, index) => (
                         <Card
                             key={index}
