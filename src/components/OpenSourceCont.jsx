@@ -30,11 +30,11 @@ const Details = ({
           {contri}&nbsp;<span className="text-sky-600">@{company}</span>
         </h3>
         <span
-          className={` font-medium max-[640px]:text-sm ${
+          className={`break-all font-medium max-[640px]:text-sm ${
             isLightMode ? "text-sky-700" : "text-gray-400"
           } `}
         >
-          <a href={link} target='_blank'>Link</a>
+          <a href={link} target='_blank'>{link}</a>
         </span>
         <ul className="list-disc list-inside md:text-sm">{bulletPoints}</ul>
       </motion.div>
