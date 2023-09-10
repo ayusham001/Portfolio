@@ -12,42 +12,44 @@ import '../index.css'
 
 export default function Home({ isLightMode }) {
     return (
-        <motion.div className={`'flex justify-center items-center  font-montserrat mt-32 `}
-        transition={{ duration: 1, type: "spring" }}>
-            <TransitionEffect/>
-            <div className='flex flex-wrap justify-around items-center md:px-1'>
-                <div className='flex items-end'>
-                    <div className='hidden md:block md:w-24'>
-                        {isLightMode ? <img src={DHireme} className='animate-pulse cursor-pointer hover:animate-none' /> : <img src={Hireme} className='animate-pulse cursor-pointer hover:animate-none' />}
-                    </div>
-                    <div className='px-4 '>
-                        <img src={Me} className='rounded-full' />
-                    </div>
-                </div>
-                <div className='flex flex-col gap-8 p-4 md:w-1/2'>
-                    <p className={isLightMode ? 'text-2xl md:text-5xl text-sky-900' : 'text-2xl md:text-5xl text-sky-500'}>Turning Vision Into Reality With Code And Design</p>
-                    <p className='text-sm md:text-lg'>
-                        Hi I'm Ayush Mishra,<br />As a full-stack developer, I am dedicated to turning ideas into innovative web applications.
-                        Explore my latest projects and articles showcasing my expertise in web development.
-                    </p>
-                    <div className='flex justify-between'>
-                        <div className='flex gap-4 items-center'>
-                            <a href={Resume} target='_blank' className={isLightMode ? 'bg-sky-800 flex text-white rounded-md py-1 px-4 hover:shadow-current hover:shadow-sm hover:text-sky-950  hover:bg-white transition-all ease-in active:scale-90 duration-75'
-                                : 'bg-sky-800 flex rounded-md w-max py-1 px-4 hover:text-sky-950 hover:bg-white transition-all ease-in active:scale-90 duration-75'}>
-                                Resume
-                                <div className='hidden md:block'>
-                                    <OpenInNewRoundedIcon className=' md:ml-1' /></div>
-                            </a>
-                            <a href='mailto:ayush.info.dev@gmail.com' target='_blank' className='underline transition-transform transform hover:scale-110 duration-300 hover:no-underline'>
-                                Email
-                            </a>
+        <>
+            <TransitionEffect />
+            <motion.div className={`'flex justify-center items-center  font-montserrat mt-32 `}
+                transition={{ duration: 1, delay: 1, type: "spring" }}>
+                <div className='flex flex-wrap justify-around items-center md:px-1'>
+                    <div className='flex items-end'>
+                        <div className='hidden md:block md:w-24'>
+                            {isLightMode ? <img src={DHireme} className='animate-pulse cursor-pointer hover:animate-none' /> : <img src={Hireme} className='animate-pulse cursor-pointer hover:animate-none' />}
                         </div>
-                        <div className='relative'>
-                            {isLightMode ? <img src={Bulb} className='w-32 animate-bulb cursor-pointer hover:animate-none' alt='Bulb' /> : <img src={WBulb} className='w-32 cursor-pointer animate-bulb hover:animate-none' alt='Bulb' />}
+                        <div className='px-4 '>
+                            <img src={Me} className='rounded-full' />
                         </div>
                     </div>
+                    <div className='flex flex-col gap-8 p-4 md:w-1/2'>
+                        <p className={isLightMode ? 'text-2xl md:text-5xl text-sky-900' : 'text-2xl md:text-5xl text-sky-500'}>Turning Vision Into Reality With Code And Design</p>
+                        <p className='text-sm md:text-lg'>
+                            Hi I'm Ayush Mishra,<br />As a full-stack developer, I am dedicated to turning ideas into innovative web applications.
+                            Explore my latest projects and articles showcasing my expertise in web development.
+                        </p>
+                        <div className='flex justify-between'>
+                            <div className='flex gap-4 items-center'>
+                                <a href={Resume} target='_blank' className={isLightMode ? 'bg-sky-800 flex text-white rounded-md py-1 px-4 hover:shadow-current hover:shadow-sm hover:text-sky-950  hover:bg-white transition-all ease-in active:scale-90 duration-75'
+                                    : 'bg-sky-800 flex rounded-md w-max py-1 px-4 hover:text-sky-950 hover:bg-white transition-all ease-in active:scale-90 duration-75'}>
+                                    Resume
+                                    <div className='hidden md:block'>
+                                        <OpenInNewRoundedIcon className=' md:ml-1' /></div>
+                                </a>
+                                <a href='mailto:ayush.info.dev@gmail.com' target='_blank' className='underline transition-transform transform hover:scale-110 duration-300 hover:no-underline'>
+                                    Email
+                                </a>
+                            </div>
+                            <div className='relative'>
+                                {isLightMode ? <img src={Bulb} className='w-32 animate-bulb cursor-pointer hover:animate-none' alt='Bulb' /> : <img src={WBulb} className='w-32 cursor-pointer animate-bulb hover:animate-none' alt='Bulb' />}
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </motion.div>
+            </motion.div>
+        </>
     )
 }

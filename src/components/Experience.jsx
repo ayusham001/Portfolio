@@ -25,7 +25,7 @@ const Details = ({
       <motion.div
         initial={{ y: 50 }}
         whileInView={{ y: 0 }}
-        transition={{ duration: 0.8, type: "spring" }}
+        transition={{ duration: 0.8, delay:0.5,type: "spring" }}
       >
         <h3 className="capitalize flex flex-wrap font-bold text-2xl sm:text-xl max-[640px]:text-lg">
           {position}&nbsp;<span className="text-sky-600">@{company}</span>
