@@ -3,7 +3,7 @@ import { motion, useScroll } from "framer-motion";
 import Icons from "./Icons";
 
 const Details = ({
-    contri,
+  contri,
   company,
   link,
   work,
@@ -34,7 +34,7 @@ const Details = ({
             isLightMode ? "text-sky-700" : "text-gray-400"
           } `}
         >
-          <a href={link} target='_blank'>{link}</a>
+          <a href={link} target='_blank'>Link</a>
         </span>
         <ul className="list-disc list-inside md:text-sm">{bulletPoints}</ul>
       </motion.div>
@@ -76,7 +76,7 @@ export default function OpenSource({ isLightMode }) {
             contri="Contributed to"
             company="Trigger.dev"
             link="https://github.com/triggerdotdev/trigger.dev"
-            work={`Built support for Express.js into the Trigger.dev platform, enhancing its capabilities for handling Express.js applications.
+            work={`Built comprehensive support for Express.js into the Trigger.dev platform, significantly enhancing its capabilities for handling complex Express.js applications.
                 Collaborated with the Trigger.dev team to design and implement the integration, ensuring seamless compatibility with Express.js.
                 Leveraged my expertise in JavaScript and web development to optimize performance and ensure a smooth user experience.
                 This contribution extended the functionality of Trigger.dev, providing valuable support for developers working with Express.js applications.`}
