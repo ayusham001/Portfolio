@@ -36,13 +36,13 @@ export default function Contact({ isLightMode }) {
         <div className=''>
             <TransitionEffect/>
         <form onSubmit={handleSubmit}
-            className={isLightMode ? " mt-32 w-fit max-w-lg md:w-full  mx-auto border-2 bg-orange-100 shadow-sky-950 shadow-2xl rounded-xl p-6"
+            className={isLightMode ? " mt-32 w-fit max-w-lg md:w-full text-orange-50 mx-auto border-2 bg-sky-950 shadow-sky-950 shadow-2xl rounded-xl p-6"
                 : "w-fit mt-32 max-w-lg md:w-full mx-auto border shadow-orange-50  shadow-lg rounded-xl p-6"}>
             <h3 className='text-center'>Contact</h3>
             <div className="mb-4">
                 <label
                     htmlFor="name"
-                    className={isLightMode ? 'block text-sky-950 font-medium mb-1' : 'block text-white font-medium mb-1'}
+                    className={isLightMode ? 'block text-orange-50 font-medium mb-1' : 'block text-white font-medium mb-1'}
                 >
                     Name
                 </label>
@@ -60,7 +60,7 @@ export default function Contact({ isLightMode }) {
             <div className="mb-4">
                 <label
                     htmlFor="email"
-                    className={isLightMode ? 'block text-sky-950 font-medium mb-1' : 'block text-white font-medium mb-1'}
+                    className={isLightMode ? 'block text-orange-50 font-medium mb-1' : 'block text-white font-medium mb-1'}
                 >
                     Email
                 </label>
@@ -76,7 +76,7 @@ export default function Contact({ isLightMode }) {
                 />
             </div>
             <div className="mb-4">
-                <label htmlFor="message" className={isLightMode ? 'block text-sky-950 font-medium mb-1' : 'block text-white font-medium mb-1'}>
+                <label htmlFor="message" className={isLightMode ? 'block text-orange-50 font-medium mb-1' : 'block text-white font-medium mb-1'}>
                     Message
                 </label>
                 <textarea
