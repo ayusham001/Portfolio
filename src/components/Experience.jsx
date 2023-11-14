@@ -67,7 +67,7 @@ export default function Experience({ isLightMode }) {
               isLightMode={isLightMode}
               company="CodeQuotient's SuperCoder Program"
               position="Full Stack Developer"
-              duration="June 2023 - Present"
+              duration="June 2023 - September 2023"
               address="Mohali, Punjab"
               work={`Actively participating in the CodeQuotient's SuperCoder Program, demonstrating exceptional coding skills and a passion for problem-solving.
                             Engaged in a challenging series of assessments, honing expertise in JavaScript and its frameworks.

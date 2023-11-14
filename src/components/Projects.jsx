@@ -5,6 +5,9 @@ import Linkloop from '../assets/linkloop.png'
 import otl from '../assets/otl.png'
 import todo from '../assets/todo.png'
 import chat from '../assets/chat.png'
+import tmc from '../assets/tmc.png'
+import calc from '../assets/calc.png'
+import clk from '../assets/clk.png'
 import TransitionEffect from './TransitionEffect'
 
 export default function Projects({ isLightMode }) {
@@ -16,6 +19,14 @@ export default function Projects({ isLightMode }) {
             tech:'ReactJS, Firebase, CSS, Material-UI',
             githubLink: 'https://github.com/ayusham001/Link-Loop',
             liveLink: 'https://linkloop.netlify.app/',
+        },
+        {
+            title: 'Ticket Management System',
+            imageUrl: tmc,
+            body: "Implemented an automated ticket assignment system, sorting tickets to respective departments based on criteria and content analysis. Integrated real-time chat for user-admin communication, devised a streamlined ticket resolution workflow, and empowered users to close tickets upon completion, boosting autonomy and system efficiency.",
+            tech:'Html, CSS, JavaScrit, NodeJs, ExpressJs,MongoDB, Socket.IO',
+            githubLink: 'https://github.com/ayusham001/Ticket-Management-System',
+            liveLink: 'https://github.com/ayusham001/Ticket-Management-System',
         },
         {
             title: 'Real-Time Chat',
@@ -48,6 +59,22 @@ export default function Projects({ isLightMode }) {
             tech:'Html, CSS, JavaScrit',
             githubLink: 'https://github.com/ayusham001/otl',
             liveLink: 'https://github.com/ayusham001/otl',
+        },
+        {
+            title: 'Calculator',
+            imageUrl: calc,
+            body: "Developed a comprehensive calculator with robust functionality encompassing basic arithmetic operations (addition, subtraction, multiplication, division). Designed a user-friendly interface for seamless usage across various devices, ensuring accuracy and versatility in mathematical computations.",
+            tech:'Html, CSS, JavaScrit',
+            githubLink: 'https://github.com/ayusham001/Calculator',
+            liveLink: 'https://ayusham001.github.io/Calculator/',
+        },
+        {
+            title: 'Analog Clock',
+            imageUrl: clk,
+            body: "Designed and developed an analog clock, showcasing time visually through traditional hour, minute, and second hands. Implemented using frontend technologies, providing a dynamic and aesthetic display of time. The clock serves as a functional and visually appealing addition, demonstrating proficiency in frontend design and development skills.",
+            tech:'Html, CSS, JavaScrit',
+            githubLink: 'https://github.com/ayusham001/Analog-Clock',
+            liveLink: 'https://ayusham001.github.io/Analog-Clock/',
         },
 
     ]
