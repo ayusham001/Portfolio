@@ -24,7 +24,7 @@ export default function Projects({ isLightMode }) {
             title: 'Ticket Management System',
             imageUrl: tmc,
             body: "Implemented an automated ticket assignment system, sorting tickets to respective departments based on criteria and content analysis. Integrated real-time chat for user-admin communication, devised a streamlined ticket resolution workflow, and empowered users to close tickets upon completion, boosting autonomy and system efficiency.",
-            tech:'Html, CSS, JavaScrit, NodeJs, ExpressJs,MongoDB, Socket.IO',
+            tech:'Html, CSS, JavaScrit, NodeJs, ExpressJs, MongoDB, Socket.IO',
             githubLink: 'https://github.com/ayusham001/Ticket-Management-System',
             liveLink: 'https://github.com/ayusham001/Ticket-Management-System',
         },
