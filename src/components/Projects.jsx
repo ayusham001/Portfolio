@@ -8,6 +8,7 @@ import chat from '../assets/chat.png'
 import tmc from '../assets/tmc.png'
 import calc from '../assets/calc.png'
 import clk from '../assets/clk.png'
+import uber from '../assets/uber.png'
 import TransitionEffect from './TransitionEffect'
 
 export default function Projects({ isLightMode }) {
@@ -35,6 +36,14 @@ export default function Projects({ isLightMode }) {
             tech:'Html, CSS, JavaScrit, NodeJs, ExpressJs, Socket.IO',
             githubLink: 'https://github.com/ayusham001/Real-time-chat',
             liveLink: 'https://github.com/ayusham001/Real-time-chat',
+        },
+        {
+            title: 'Uber Clone',
+            imageUrl: uber,
+            body: "Developed a responsive Uber clone showcasing advanced web development skills using Next.js, Tailwind CSS, Clerk for authentication, Stripe, and Google Maps API integration. The project reflects my expertise in crafting dynamic and feature-rich applications. The seamless combination of technologies ensures a user-friendly experience, while the use of Stripe enables secure payment transactions.",
+            tech:'Next.js, Tailwind CSS, Clerk, Stripe, Google Maps API',
+            githubLink: 'https://github.com/ayusham001/UberClone.git',
+            liveLink: 'https://ubeerrr.netlify.app/',
         },
         {
             title: 'Khaana-Paani: Ultimate Restaurant Finder',
