@@ -25,7 +25,7 @@ const Details = ({
       <motion.div
         initial={{ y: 50 }}
         whileInView={{ y: 0 }}
-        transition={{ duration: 0.8, delay:0.5,type: "spring" }}
+        transition={{ duration: 0.8, delay: 0.5, type: "spring" }}
       >
         <h3 className="capitalize flex flex-wrap font-bold text-2xl sm:text-xl max-[640px]:text-lg">
           {position}&nbsp;<span className="text-sky-600">@{company}</span>
@@ -65,23 +65,23 @@ export default function Experience({ isLightMode }) {
           <ul className="w-full flex flex-col items-start justify-evenly ml-4">
             <Details
               isLightMode={isLightMode}
-              company="CodeQuotient's SuperCoder Program"
+              company="Decentraclasses"
+              position="Frontend Developer"
+              duration="Aug 2023 - Feb 2024"
+              address="Ghaziabad, UP"
+              work={`Spearheaded the design and development of user-friendly and visually appealing web interfaces for Decentraclasses, ensuring seamless user experiences and responsive layouts.
+              Collaborated closely with cross-functional teams to translate design concepts into functional and interactive web applications, enhancing the overall user engagement and satisfaction.          
+              Implemented innovative frontend solutions, leveraging cutting-edge technologies and best practices, to optimize website performance and deliver a modern, dynamic online learning environment.`}
+            />
+            <Details
+              isLightMode={isLightMode}
+              company="CodeQuotient"
               position="Full Stack Developer"
-              duration="June 2023 - September 2023"
+              duration="May 2023 - Aug 2023"
               address="Mohali, Punjab"
               work={`Actively participated in the CodeQuotient's SuperCoder Program, demonstrating exceptional coding skills and a passion for problem-solving.
                             Engaged in a challenging series of assessments, honing expertise in JavaScript and its frameworks.
                             Collaborated with fellow participants and mentors, fostering teamwork and effective communication while tackling complex coding projects and real-world software challenges.`}
-            />
-            <Details
-              isLightMode={isLightMode}
-              company="Google Developer Students Clubs"
-              position="Marketing Manager"
-              duration="Aug 2022 - June 2023"
-              address=" Prayagraj, UP"
-              work={`Managed and skillfully executed dynamic marketing strategies to increase awareness and enthusiastic participation in GDSC events and activities.
-                        Developed and implemented digital marketing campaigns, including social media, email, and content marketing, resulting in increased engagement and event registrations.
-                        Created compelling marketing collateral, such as flyers, and promotional materials, to effectively communicate GDSC's value proposition to the target audience`}
             />
           </ul>
         </div>

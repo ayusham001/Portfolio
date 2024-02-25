@@ -43,7 +43,7 @@ export default function Skills({isLightMode}) {
                 <Skill name='DSA' x='35vw' y='-1vw' isLightMode={isLightMode}  />
                 <Skill name='NodeJS' x='35vw' y='-10vw' isLightMode={isLightMode}  />
                 <Skill name='SCSS' x='-38vw' y='-1vw' isLightMode={isLightMode}  />
-                <Skill name='Redux' x='-22vw' y='-20vw' isLightMode={isLightMode}  />
+                <Skill name='DBMS' x='-22vw' y='-20vw' isLightMode={isLightMode}  />
                 <Skill name='SQL' x='18vw' y='4vw' isLightMode={isLightMode}  />
                 <Skill name='MongoDB' x='26vw' y='-5vw' isLightMode={isLightMode}  />
             </div>
