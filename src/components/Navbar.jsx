@@ -7,6 +7,7 @@ import WGFG from '../assets/gfghite.png';
 import GFG from '../assets/gfg.png';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import XIcon from '@mui/icons-material/X';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 
@@ -26,7 +27,7 @@ export default function Navbar({ isLightMode, toggleLightMode }) {
                     <a href="https://www.linkedin.com/in/ayush-mishra-809385215/" target='_blank' ><LinkedInIcon className={isLightMode ? 'text-blue-600' : "text-white-800"} /></a>
                     <a href="https://github.com/ayusham001" target='_blank' ><GitHubIcon className={isLightMode ? 'text-blue-950' : "text-white-800"} /></a>
                     <a href="https://auth.geeksforgeeks.org/user/ayusham001/practice"target='_blank'>{isLightMode ? <img src={GFG} alt='logo' className="w-7 h-4" /> : <img src={WGFG} alt='logo' className="w-8 h-9" />}</a>
-                    <a href="https://twitter.com/ayusham001" target='_blank'><TwitterIcon className={isLightMode ? 'text-sky-500' : "text-white-800"} /></a>
+                    <a href="https://twitter.com/ayusham001" target='_blank'><XIcon className={isLightMode ? 'text-black' : "text-white-800"} /></a>
                     <a href="https://www.instagram.com/ayush.__mishra/"target='_blank'><InstagramIcon className={isLightMode ? 'text-rose-500' : "text-white-800"} /></a>
                     <button
                         onClick={toggleLightMode}
