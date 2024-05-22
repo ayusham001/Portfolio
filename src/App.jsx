@@ -15,6 +15,7 @@ import "./index.css";
 import ScrollToTopButton from "./components/Scroll";
 
 function ScrollToTop() {
+  
   const { pathname } = useLocation();
 
   useEffect(() => {
