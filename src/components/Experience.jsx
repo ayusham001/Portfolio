@@ -65,6 +65,16 @@ export default function Experience({ isLightMode }) {
           <ul className="w-full flex flex-col items-start justify-evenly ml-4">
             <Details
               isLightMode={isLightMode}
+              company="Spenda"
+              position="Associate Software Engineer"
+              duration="May 2024 - Present"
+              address="Sydney, New South Wales, Australia"
+              work={`Developed and maintained scalable web applications, contributing to Spenda’s software solutions by building high-performance apps using modern frameworks. Wrote clean, efficient code ensuring reliability and scalability.
+                Collaborated with cross-functional teams, including product managers and designers, to implement new features that enhance user experience. Engaged in brainstorming, code reviews, and design discussions to meet product goals.
+                Optimized code performance by refactoring, identifying bottlenecks, and applying best practices in software development, including version control, testing, and documentation.`}
+            />
+            <Details
+              isLightMode={isLightMode}
               company="Decentraclasses"
               position="Frontend Developer"
               duration="Aug 2023 - Feb 2024"

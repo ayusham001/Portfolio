@@ -48,8 +48,8 @@ function App() {
   return (
     <>
       <Router>
-        <Navbar isLightMode={isLightMode} toggleLightMode={toggleLightMode} />
         <div className="main-container">
+        <Navbar isLightMode={isLightMode} toggleLightMode={toggleLightMode} />
           <ScrollToTop />
           <ScrollToTopButton isLightMode={isLightMode} />
           <Routes>
