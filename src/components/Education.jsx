@@ -44,7 +44,7 @@ export default function Education({ isLightMode }) {
             <Details
               isLightMode={isLightMode}
               course="Bachelor of Technology - Information Technology"
-              duration=" 2020 - Present"
+              duration=" 2020 - 2024"
               place="United College of Engineering and Research"
             />
             <Details
