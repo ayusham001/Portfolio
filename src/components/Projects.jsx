@@ -87,7 +87,7 @@ export default function Projects({ isLightMode }) {
     },
   ];
   return (
-    <div className="mt-32">
+    <div className="my-32">
       <div>
         <div className="flex flex-col gap-8 my-3">
           <TransitionEffect />
