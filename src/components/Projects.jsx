@@ -10,6 +10,8 @@ import calc from "../assets/calc.png";
 import clk from "../assets/clk.png";
 import uber from "../assets/uber.png";
 import TransitionEffect from "./TransitionEffect";
+import OpenSource from "./OpenSourceCont";
+import Freelance from "./FreelanceWork";
 
 export default function Projects({ isLightMode }) {
   const Projects = [
@@ -87,10 +89,19 @@ export default function Projects({ isLightMode }) {
     },
   ];
   return (
-    <div className="my-32">
+    <div className="my-14">
       <div>
-        <div className="flex flex-col gap-8 my-3">
+        <div className="flex flex-col gap-8">
           <TransitionEffect />
+          <div id="freelance">
+            <Freelance isLightMode={isLightMode} />
+          </div>
+          <div id="opensource">
+            <OpenSource isLightMode={isLightMode} />
+          </div>
+          <h2 className="font-bold text-5xl mb-10 w-full text-center md:text-3xl max-[640px]:text-2xl">
+            Personal Projects
+          </h2>
           {Projects.map((project, index) => (
             <Card
               key={index}
