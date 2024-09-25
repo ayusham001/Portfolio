@@ -9,6 +9,7 @@ import Freelance from './FreelanceWork';
 export default function About({ isLightMode }) {
     useEffect(() => {
         const hash = window.location.hash;
+        
         if (hash) {
             const element = document.getElementById(hash.substring(1));
             if (element) {
