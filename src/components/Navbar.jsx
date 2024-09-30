@@ -8,7 +8,6 @@ import GFG from '../assets/gfg.png';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import XIcon from '@mui/icons-material/X';
-import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 
 export default function Navbar({ isLightMode, toggleLightMode }) {
