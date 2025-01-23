@@ -1,11 +1,9 @@
-import React, { useEffect } from "react";
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App.jsx'
 
-function App() {
-  useEffect(() => {
-    window.location.href = "https://www.google.com";
-  }, []);
-
-  return null; // Since it's redirecting, no UI is necessary
-}
-
-export default App;
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+)

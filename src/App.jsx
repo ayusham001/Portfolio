@@ -15,7 +15,6 @@ import "./index.css";
 import ScrollToTopButton from "./components/Scroll";
 
 function ScrollToTop() {
-  
   const { pathname } = useLocation();
 
   useEffect(() => {
@@ -27,6 +26,9 @@ function ScrollToTop() {
 
 function App() {
   const [isLightMode, setLightMode] = useState(false);
+  useEffect(() => {
+    window.location.href = "https://www.ayushcodez.work/";
+  }, []);
 
   const updateMode = (lightMode) => {
     setLightMode(lightMode);
@@ -49,7 +51,7 @@ function App() {
     <>
       <Router>
         <div className="main-container">
-        <Navbar isLightMode={isLightMode} toggleLightMode={toggleLightMode} />
+          <Navbar isLightMode={isLightMode} toggleLightMode={toggleLightMode} />
           <ScrollToTop />
           <ScrollToTopButton isLightMode={isLightMode} />
           <Routes>
